@@ -1,0 +1,210 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    margin:0 100px;
+    background-color: #ffeae0;
+    }
+    
+   .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+   }
+
+   .nav .logo h1{
+    font-weight: 600; font-family: sans-serif; color :#ff511c;
+    text-shadow: 2px 2px 5px #ff511c;
+    position: -webkit-sticky;
+    }
+    
+    .nav ul{
+    display: flex;
+    list-style: none;
+    position:sticky;
+    }
+    .nav ul li{
+    margin-right: 30px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    .nav ul li a:hover{
+        background:rgba(82, 70, 70, 0.7);
+        border-radius: 6px;
+    }
+     
+    input{
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .signin{
+        background-color: transparent;
+        border: none;
+    }
+    .signup{
+        background-color: #ff511c;
+        color:#ffffff;
+        border: none;
+        border-radius: 5px;
+        
+   
+    }
+    .A{
+       
+        width: 170px;
+        height: auto;
+        position: relative;
+        user-select: none;
+        animation: rotate 10s linear infinite;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 30px;
+        margin-top: 120px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    .content .content-left{
+        display: block;
+        width: 100%;
+    }
+    .content ,.content-left .info{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content .content-left .info h2{
+        padding-top: 0px;
+        font-size: 60px;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+    }
+    .content .content-left .info p{
+       font-size: 20px;
+       line-height:2pc ;
+       margin-bottom: 30px; 
+       font-family: sans-serif;
+    }
+    .content .content-left button{
+      padding: 10px 23px;
+      background-color: #ff511c;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;  
+    }
+    .content .content-right{
+        display: block;
+        width: 100%;
+
+    }
+    .content .content-right img{
+        
+        top: 0px;
+        left: 80%;
+        width: 170px;
+        height: auto;
+        position: relative;
+        user-select: none;
+        animation: rotate 10s linear infinite;
+    }
+    
+    @keyframes rotate {
+        0%{transform:rotate(0deg);}
+        100%{transform: rotate(360deg);}
+        
+    }
+    
+    .category{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .category .list-items{
+        width: 90%;
+        position: relative;
+        margin-top: 100px;
+    }
+    .category .list-items h3{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: sans-serif;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    .category .list-items .card-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .category .card-list .card{
+        width: 230px;
+        height: auto;
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        background: #ffffff;
+        outline: 2px solid #faad96;
+        margin-left: 20px;
+    }
+    .category .card-list .card img{
+        width: 100px;
+        height: 100px;
+        bottom: 130px;
+        left: 65px;
+        object-fit: cover;
+        object-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        box-shadow: 0 20px 20px #faad96;
+        border-radius: 50%;
+    }
+    .category .card-list .card .food-title{
+        padding: 40px 0 10px;
+
+    }
+    .category .card-list .card .food-title h1{
+       text-align: left;
+       font-weight:bold ;
+       font-size: 16px;
+       font-family: sans-serif; 
+    }
+    .category .card .desc-food p{
+        font-size: 13px;
+        text-align: left;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+
+    }
+    .category .card .price{
+        display: flex;
+        align-items: right;
+        justify-content: space-between;
+    }
+    .category .card .price span .plus .plus-icon{
+        color: #ff511c;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 20px;
+        background-color: #ff511c;
+    }
