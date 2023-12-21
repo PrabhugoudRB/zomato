@@ -18,7 +18,9 @@
    }
 
    .nav .logo h1{
-    font-weight: 600; font-family: sans-serif; color :#ff511c;
+    font-weight: 600; 
+    font-family: sans-serif; 
+    color :#ff511c;
     text-shadow: 2px 2px 5px #ff511c;
     position: -webkit-sticky;
     }
@@ -38,9 +40,11 @@
         font-weight: 500;
         font-family: sans-serif;
     }
+    
     .nav ul li a:hover{
-        background:rgba(82, 70, 70, 0.7);
-        border-radius: 6px;
+        background:#99502e;
+        border-radius: 4px;
+        
     }
      
     input{
@@ -53,21 +57,16 @@
         border: none;
     }
     .signup{
-        background-color: #ff511c;
-        color:#ffffff;
+        
+        color:black;
         border: none;
         border-radius: 5px;
-        
-   
     }
-    .A{
-       
-        width: 170px;
-        height: auto;
-        position: relative;
-        user-select: none;
-        animation: rotate 10s linear infinite;
+    .signup:hover{
+        background-color: #ff511c;
+        box-shadow: 2px 2px 5px black;
     }
+    
     .content{
         display: grid;
         grid-template-columns: 50% auto;
@@ -116,7 +115,7 @@
         top: 0px;
         left: 80%;
         width: 170px;
-        height: auto;
+        height: 70px;
         position: relative;
         user-select: none;
         animation: rotate 10s linear infinite;
@@ -164,7 +163,7 @@
     .category .card-list .card img{
         width: 100px;
         height: 100px;
-        bottom: 130px;
+        bottom: 150px;
         left: 65px;
         object-fit: cover;
         object-position: center;
